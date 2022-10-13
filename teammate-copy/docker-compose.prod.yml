@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  web:
+    command: bash -c "npm run build && npx serve build --listen $WEB_PORT"
+  api:
+    command: uvicorn app.main:app --host 0.0.0.0 --port $API_PORT

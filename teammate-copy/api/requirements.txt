@@ -1,0 +1,18 @@
+# http
+fastapi[all] # https://fastapi.tiangolo.com/#optional-dependencies
+
+# db
+SQLAlchemy
+psycopg2
+alembic
+
+# auth
+cryptography
+bcrypt
+
+# tests
+pytest
+
+# linting
+prospector[all]
+sqlalchemy[mypy] # https://docs.sqlalchemy.org/en/14/orm/extensions/mypy.html
